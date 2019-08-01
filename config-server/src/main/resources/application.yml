@@ -1,0 +1,44 @@
+server:
+  port: 7001
+
+spring:
+  application:
+    name: config-server
+  #  boot:
+  #    admin:
+  #      client:
+  #        url: http://localhost:9009 #/administrator
+  #        username: *****
+  #        password: 123
+  #        instance:
+  #          prefer-ip: true
+  #  profiles:
+  #    active: native    #������������ Ĭ��Ϊgit
+  #  cloud:
+  #    config:
+  #      server:
+  #        native:
+  #          search-locations: classpath:config-repo
+  # git��������
+  cloud:
+    config:
+      retry:
+        initial-interval: 3000
+        multiplier: 1.5
+        max-interval: 20000
+        max-attempts: 6
+      server:
+        git:
+          uri: http://**********/usp/config-repositiory.git
+          search-paths: config-repo
+          username: *
+          password: *
+          default-label: master
+
+info:
+  app:
+    name: "config-server"
+    description : "config"
+    version: "1.0.1"
+    spring-boot-version : "2.0.1.RELEASE"
+  version: "1.0.1"
