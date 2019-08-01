@@ -110,7 +110,7 @@
                 <artifactId>opentracing-mongo-driver</artifactId>
                 <version>${opentracing-mongo-driver.version}</version>
             </dependency>
-            
+
 
 
         </dependencies>
