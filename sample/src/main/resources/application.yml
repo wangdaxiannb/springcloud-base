@@ -1,0 +1,24 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+info:
+  app:
+    name: "project"
+    description : "练习"
+    version: "1.0.1"
+    spring-boot-version : "2.0.1.RELEASE"
+  version: "1.0.1"
+logging:
+  level:
+    com:
+      panpass:
+        project:
+          dao: debug
+
+
+

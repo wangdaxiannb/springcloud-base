@@ -1,0 +1,31 @@
+server:
+  port: 8099
+spring:
+  cloud:
+    refresh:
+      refreshable: none
+    config:
+      discovery:
+        enabled: true
+        service_id: config-server
+      fail-fast: true
+      name: project
+      profile: dev
+      label: master
+
+  application:
+    name: project
+
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    preferIpAddress: true
+
+
+
