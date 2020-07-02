@@ -25,7 +25,7 @@
         <hutool.version>4.0.10</hutool.version>
         <fastjson.version>1.2.47</fastjson.version>
         <druid.version>1.1.9</druid.version>
-        <mysql-connector-java.version>6.0.6</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.16</mysql-connector-java.version>
         <mybatis-plus.version>2.1.9</mybatis-plus.version>
         <opentracing-mongo-driver.version>0.0.4</opentracing-mongo-driver.version>
         <shiro.version>1.4.0</shiro.version>
