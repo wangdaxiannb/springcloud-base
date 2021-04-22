@@ -28,7 +28,7 @@
         <mysql-connector-java.version>6.0.6</mysql-connector-java.version>
         <mybatis-plus.version>2.1.9</mybatis-plus.version>
         <opentracing-mongo-driver.version>0.0.4</opentracing-mongo-driver.version>
-        <shiro.version>1.4.0</shiro.version>
+        <shiro.version>1.7.0</shiro.version>
     </properties>
 
     <dependencies>
